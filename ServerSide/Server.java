@@ -15,6 +15,15 @@ public class Server
             while(true)
             {
                 socket = serverSocket.accept();
+                
+                if(socket.isConnected() )
+                {
+                    System.out.println("Ho ricevuto una richiesta di connessione queste sono le info sulla connessione");
+                    System.out.println("LocalPort = " + socket.getLocalPort() );
+                    System.out.println("Port = " + socket.getPort() );
+                    System.out.println("LocalAddress = " + socket.getLocalAddress());
+                }
+
             }//end while
         }
         catch (IOException e)
