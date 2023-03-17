@@ -17,7 +17,7 @@ public class Client
             
             try
             {
-                Socket socket = new Socket("localHost", 6000);
+                Socket socket = new Socket
             }
             catch(IOException e)
             {

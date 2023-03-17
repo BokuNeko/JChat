@@ -11,6 +11,8 @@ public class Server
         try
         {
             ServerSocket serverSocket = new ServerSocket(6000);
+            System.out.println(serverSocket.getInetAddress().getHostAddress() );
+            System.out.println(serverSocket.getInetAddress().getAddress() );
             //Loop infinito per ascolto connessioni
             while(true)
             {
